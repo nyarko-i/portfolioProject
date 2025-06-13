@@ -1,13 +1,13 @@
-import { Github, Linkedin, Mail, Heart } from "lucide-react"
+import { Github, Linkedin, Mail } from "lucide-react";
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
 
   const socialLinks = [
     { icon: Github, href: "https://github.com", label: "GitHub" },
     { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
     { icon: Mail, href: "mailto:isaac@example.com", label: "Email" },
-  ]
+  ];
 
   return (
     <footer className="bg-muted/30 border-t">
@@ -18,7 +18,8 @@ export default function Footer() {
             <div>
               <h3 className="text-xl font-bold mb-4">Isaac.</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Frontend Developer passionate about creating beautiful and functional web experiences.
+                Software Engineer passionate about creating beautiful and
+                functional web experiences.
               </p>
             </div>
 
@@ -27,27 +28,42 @@ export default function Footer() {
               <h4 className="font-semibold mb-4">Quick Links</h4>
               <ul className="space-y-2">
                 <li>
-                  <a href="#home" className="text-muted-foreground hover:text-primary transition-colors">
+                  <a
+                    href="#home"
+                    className="text-muted-foreground hover:text-primary transition-colors"
+                  >
                     Home
                   </a>
                 </li>
                 <li>
-                  <a href="#about" className="text-muted-foreground hover:text-primary transition-colors">
+                  <a
+                    href="#about"
+                    className="text-muted-foreground hover:text-primary transition-colors"
+                  >
                     About
                   </a>
                 </li>
                 <li>
-                  <a href="#services" className="text-muted-foreground hover:text-primary transition-colors">
+                  <a
+                    href="#services"
+                    className="text-muted-foreground hover:text-primary transition-colors"
+                  >
                     Services
                   </a>
                 </li>
                 <li>
-                  <a href="#work" className="text-muted-foreground hover:text-primary transition-colors">
+                  <a
+                    href="#work"
+                    className="text-muted-foreground hover:text-primary transition-colors"
+                  >
                     Work
                   </a>
                 </li>
                 <li>
-                  <a href="#contact" className="text-muted-foreground hover:text-primary transition-colors">
+                  <a
+                    href="#contact"
+                    className="text-muted-foreground hover:text-primary transition-colors"
+                  >
                     Contact
                   </a>
                 </li>
@@ -59,7 +75,7 @@ export default function Footer() {
               <h4 className="font-semibold mb-4">Connect</h4>
               <div className="flex space-x-4">
                 {socialLinks.map((social) => {
-                  const Icon = social.icon
+                  const Icon = social.icon;
                   return (
                     <a
                       key={social.label}
@@ -69,21 +85,20 @@ export default function Footer() {
                       <Icon className="w-5 h-5" />
                       <span className="sr-only">{social.label}</span>
                     </a>
-                  )
+                  );
                 })}
               </div>
             </div>
           </div>
 
           {/* Bottom Bar */}
-          <div className="border-t mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-muted-foreground text-sm">© {currentYear} Isaac. All rights reserved.</p>
-            <p className="text-muted-foreground text-sm flex items-center mt-2 md:mt-0">
-              Made with <Heart className="w-4 h-4 mx-1 text-red-500" /> using Next.js & Tailwind CSS
+          <div className="border-t mt-8 pt-8 ">
+            <p className="text-muted-foreground text-center text-sm">
+              © {currentYear} Isaac. All rights reserved.
             </p>
           </div>
         </div>
       </div>
     </footer>
-  )
+  );
 }

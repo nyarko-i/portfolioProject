@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Code, Layout, Smartphone, Palette, Globe, Zap } from "lucide-react"
+import { Code, Layout, Smartphone } from "lucide-react"
 
 export default function Services() {
   const services = [
@@ -11,7 +11,7 @@ export default function Services() {
     },
     {
       icon: Layout,
-      title: "UI/UX Design",
+      title: "UI/UX Design and Graphics Design",
       description:
         "Creating intuitive and beautiful user interfaces that provide excellent user experiences across all devices.",
     },
@@ -20,25 +20,12 @@ export default function Services() {
       title: "Mobile Development",
       description: "Developing mobile-first applications and progressive web apps that work seamlessly on all devices.",
     },
-    {
-      icon: Palette,
-      title: "Brand Identity",
-      description: "Designing cohesive brand identities including logos, color schemes, and visual guidelines.",
-    },
-    {
-      icon: Globe,
-      title: "SEO Optimization",
-      description: "Optimizing websites for search engines to improve visibility and drive organic traffic.",
-    },
-    {
-      icon: Zap,
-      title: "Performance",
-      description: "Optimizing website performance for faster loading times and better user experience.",
-    },
+    
   ]
 
   return (
     <section id="services" className="py-20">
+      
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}

@@ -1,25 +1,30 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { ModeToggle } from "@/components/mode-toggle"
-import { Menu, X } from "lucide-react"
-import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet"
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { ModeToggle } from "@/components/mode-toggle";
+import { Menu, X } from "lucide-react";
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+  SheetClose,
+} from "@/components/ui/sheet";
 
 export default function Header() {
-  const [isScrolled, setIsScrolled] = useState(false)
-  const [activeSection, setActiveSection] = useState("home")
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
 
   // Handle scroll effect
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50)
-    }
+      setIsScrolled(window.scrollY > 50);
+    };
 
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   // Navigation links
   const navLinks = [
@@ -28,27 +33,32 @@ export default function Header() {
     { name: "Services", href: "#services", id: "services" },
     { name: "Work", href: "#work", id: "work" },
     { name: "Contact", href: "#contact", id: "contact" },
-  ]
+  ];
 
   // Handle smooth scrolling
   const handleNavClick = (href: string, id: string) => {
-    setActiveSection(id)
-    const element = document.querySelector(href)
+    setActiveSection(id);
+    const element = document.querySelector(href);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
+      element.scrollIntoView({ behavior: "smooth" });
     }
-  }
+  };
 
   return (
     <header
       className={`sticky top-0 z-50 w-full border-b transition-all duration-300 ${
-        isScrolled ? "bg-background/80 backdrop-blur-md shadow-sm" : "bg-background"
+        isScrolled
+          ? "bg-background/80 backdrop-blur-md shadow-sm"
+          : "bg-background"
       }`}
     >
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         {/* Logo */}
-        <Link href="/" className="text-xl font-bold hover:text-primary transition-colors">
-          Isaac.
+        <Link
+          href="/"
+          className="text-xl font-bold hover:text-primary transition-colors"
+        >
+          Isaac Nyarko.
         </Link>
 
         {/* Desktop Navigation */}
@@ -58,7 +68,9 @@ export default function Header() {
               key={link.id}
               onClick={() => handleNavClick(link.href, link.id)}
               className={`text-sm font-medium transition-colors hover:text-primary relative ${
-                activeSection === link.id ? "text-primary" : "text-muted-foreground"
+                activeSection === link.id
+                  ? "text-primary"
+                  : "text-muted-foreground"
               }`}
             >
               {link.name}
@@ -72,7 +84,7 @@ export default function Header() {
         {/* Desktop Actions */}
         <div className="hidden md:flex items-center space-x-4">
           <ModeToggle />
-          <Button size="sm">Lets Talk</Button>
+          <Button size="sm">Connect</Button>
         </div>
 
         {/* Mobile Navigation */}
@@ -102,7 +114,9 @@ export default function Header() {
                       <button
                         onClick={() => handleNavClick(link.href, link.id)}
                         className={`text-left text-base font-medium transition-colors hover:text-primary ${
-                          activeSection === link.id ? "text-primary" : "text-muted-foreground"
+                          activeSection === link.id
+                            ? "text-primary"
+                            : "text-muted-foreground"
                         }`}
                       >
                         {link.name}
@@ -120,5 +134,5 @@ export default function Header() {
         </div>
       </div>
     </header>
-  )
+  );
 }

@@ -1,16 +1,23 @@
-import { Button } from "@/components/ui/button"
-import { Download, ArrowRight, Github, Linkedin, Mail } from "lucide-react"
-import Image from "next/image"
+import { Button } from "@/components/ui/button";
+import { Download, ArrowRight, Github, Linkedin, Mail } from "lucide-react";
+import Image from "next/image";
 
 export default function Hero() {
   const socialLinks = [
-    { icon: Github, href: "https://github.com", label: "GitHub" },
-    { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-    { icon: Mail, href: "mailto:isaac@example.com", label: "Email" },
-  ]
+    { icon: Github, href: "https://github.com/nyarko-i", label: "GitHub" },
+    {
+      icon: Linkedin,
+      href: "https://www.linkedin.com/in/isaac-nyarko-7a8ab3291",
+      label: "LinkedIn",
+    },
+    { icon: Mail, href: "mailto:inyarko98@gmail.com", label: "Email" },
+  ];
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section
+      id="home"
+      className="min-h-screen p-8 flex items-center justify-center relative overflow-hidden"
+    >
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-secondary/5" />
 
@@ -36,46 +43,68 @@ export default function Hero() {
           </div>
 
           {/* Greeting */}
-          <p className="text-muted-foreground mb-4">Hi there, I am Isaac</p>
+          <p className="text-muted-foreground mb-4">Hi there, I am Isaac a</p>
 
           {/* Main heading */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6">
-            <span className="block">Frontend Developer</span>
-            <span className="block text-primary">& UI Designer</span>
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
+            <span className="block">Software Engineer</span>
           </h1>
 
           {/* Description */}
-          <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-            I create beautiful, responsive web applications with modern technologies. Passionate about clean code, great
-            user experiences, and bringing ideas to life.
+          <p className="text-l md:text-l text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
+            I create beautiful, responsive web applications with modern
+            technologies. Passionate about clean code, great user experiences,
+            and bringing ideas to life.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button size="lg" className="group hover:scale-105 transition-transform">
-              <Download className="w-4 h-4 mr-2" />
-              Download CV
+            <Button
+              size="lg"
+              className="group hover:scale-105 transition-transform"
+            >
+              <a
+                href="https://drive.google.com/file/d/1jRsloK3H6QwH9WhbIzVANHWiQpW7PDrt/view?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-2"
+              >
+                <Download className="mr-2" />
+                Download CV
+              </a>
             </Button>
-            <Button variant="outline" size="lg" className="group hover:scale-105 transition-transform">
-              View My Work
-              <ArrowRight className="w-4 h-4 ml-2" />
-            </Button>
+            <a
+              href="https://github.com/nyarko-i"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                variant="outline"
+                size="lg"
+                className="cursor-pointer group hover:scale-105 transition-transform"
+              >
+                View My Work
+                <ArrowRight className="w-4 h-4 ml-2" />
+              </Button>
+            </a>
           </div>
 
           {/* Social Links */}
           <div className="flex justify-center space-x-6">
             {socialLinks.map((social) => {
-              const Icon = social.icon
+              const Icon = social.icon;
               return (
                 <a
                   key={social.label}
                   href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="p-3 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-all hover:scale-110"
                 >
                   <Icon className="w-5 h-5" />
                   <span className="sr-only">{social.label}</span>
                 </a>
-              )
+              );
             })}
           </div>
         </div>
@@ -88,5 +117,5 @@ export default function Hero() {
         </div>
       </div>
     </section>
-  )
+  );
 }
