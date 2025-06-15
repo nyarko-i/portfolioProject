@@ -65,7 +65,7 @@ export default function About() {
               <div className="relative w-full max-w-md mx-auto hover:scale-105 transition-transform">
                 <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
                   <Image
-                    src="/placeholder.svg?height=400&width=400"
+                    src="/images/about/about-image.jpg"
                     alt="Isaac working"
                     width={400}
                     height={400}
