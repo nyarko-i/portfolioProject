@@ -45,20 +45,20 @@ export default function Contact() {
     {
       icon: Mail,
       title: "Email",
-      value: "isaac@example.com",
-      href: "mailto:isaac@example.com",
+      value: "inyarko98@gmail.com",
+      href: "mailto:inyarko98@gmail.com",
     },
     {
       icon: Phone,
       title: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567",
+      value: "+233 (54) 503-1572",
+      href: "tel:+233545031572",
     },
     {
       icon: MapPin,
       title: "Location",
-      value: "New York, NY",
-      href: "#",
+      value: "Amasaman, Accra",
+      href: "https://www.google.com/maps/place/Amasaman+Police+Divisional+Headquarters/@5.7061922,-0.304526,17z/data=!3m1!4b1!4m6!3m5!1s0xfdf9f8a68b63d7b:0x5f05e7c92646228f!8m2!3d5.7061869!4d-0.3019511!16s%2Fg%2F11clwdb7jp?entry=ttu&g_ep=EgoyMDI1MDYxNS4wIKXMDSoASAFQAw%3D%3D",
     },
   ];
 

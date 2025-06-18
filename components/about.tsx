@@ -1,16 +1,16 @@
 "use client";
-import { Card, CardContent } from "@/components/ui/card";
+//import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
 export default function About() {
-  const stats = [
-    { label: "Projects Completed", value: "7+", icon: "🚀" },
-    { label: "Years Experience", value: "2+", icon: "⏱️" },
-    { label: "Happy Clients", value: "3+", icon: "😊" },
-    { label: "Technologies", value: "10+", icon: "⚡" },
-  ];
+  // const stats = [
+  //   { label: "Projects Completed", value: "7+", icon: "🚀" },
+  //   { label: "Years Experience", value: "2+", icon: "⏱️" },
+  //   { label: "Happy Clients", value: "3+", icon: "😊" },
+  //   { label: "Technologies", value: "10+", icon: "⚡" },
+  // ];
 
   const skills = [
     "HTML",
@@ -131,7 +131,7 @@ export default function About() {
           </div>
 
           {/* Stats Section */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
+          {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
             {stats.map((stat, i) => (
               <motion.div
                 key={stat.label}
@@ -154,7 +154,7 @@ export default function About() {
                 </Card>
               </motion.div>
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

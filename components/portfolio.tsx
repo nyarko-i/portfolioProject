@@ -32,22 +32,37 @@ export default function Portfolio() {
       githubUrl: "#",
     },
     {
-      title: "Social Media App",
+      title: "Risk Credit Score Design",
       description:
-        "A social media platform with real-time messaging and posts.",
-      image: "/placeholder.svg?height=300&width=400",
-      technologies: ["React", "Firebase", "Material-UI", "PWA"],
-      liveUrl: "#",
-      githubUrl: "#",
+        "An AI powered fintech application designed for credit scorers, auditors and loan officers",
+      image: "/images/projects/project6.png",
+      technologies: ["Figma"],
+      liveUrl:
+        "https://www.figma.com/proto/yIwQw2tDsQBdbaEdLsPMRI/Kelvin?page-id=0%3A1&node-id=18-114&viewport=99%2C76%2C0.37&t=ztEYQBbG6CeWCDbR-1&scaling=scale-down&content-scaling=fixed",
+      githubUrl:
+        "https://www.figma.com/proto/yIwQw2tDsQBdbaEdLsPMRI/Kelvin?page-id=0%3A1&node-id=18-114&viewport=99%2C76%2C0.37&t=ztEYQBbG6CeWCDbR-1&scaling=scale-down&content-scaling=fixed",
     },
     {
-      title: "Learning Platform",
+      title: "Church Management System Design",
       description:
-        "An online learning platform with video streaming and quizzes.",
-      image: "/placeholder.svg?height=300&width=400",
-      technologies: ["Next.js", "Prisma", "PostgreSQL", "Stripe"],
-      liveUrl: "#",
-      githubUrl: "#",
+        "A management system that helps churches with member management and finance records.",
+      image: "/images/projects/project5.png",
+      technologies: ["Figma"],
+      liveUrl:
+        "https://www.figma.com/proto/9FkE2dTt04gAuiWotH8DJm/Church-Management-System?page-id=7%3A105&node-id=106-117&p=f&viewport=316%2C72%2C0.16&t=3ztaoAunr0ZXjfSV-1&scaling=scale-down&content-scaling=fixed",
+      githubUrl:
+        "https://www.figma.com/design/9FkE2dTt04gAuiWotH8DJm/Church-Management-System?node-id=7-105&t=jZqHF3khxq3z0pY2-1",
+    },
+    {
+      title: "Bena's Bazzar",
+      description:
+        "A mobile app platform designed for odering your favorite outfit at your convinience",
+      image: "/images/projects/project7.png",
+      technologies: ["Figma"],
+      liveUrl:
+        "https://www.figma.com/proto/ZrzGOFZ7NS4EstqkoXpEuc/Bena-s-Bazzar?page-id=0%3A1&node-id=110-590&p=f&viewport=2100%2C673%2C0.58&t=ZtsamndnNgxFpfrx-1&scaling=scale-down&content-scaling=fixed",
+      githubUrl:
+        "https://www.figma.com/design/ZrzGOFZ7NS4EstqkoXpEuc/Bena-s-Bazzar?node-id=0-1&t=2aAFUk7gINw0g5ra-1",
     },
   ];
 
@@ -122,10 +137,26 @@ export default function Portfolio() {
           </div>
 
           {/* View More Button */}
-          <div className="text-center mt-12">
-            <Button variant="outline" size="lg">
-              View All Projects
-              <ExternalLink className="w-4 h-4 ml-2" />
+          <div className="text-center mt-12 space-x-6 sm:space-y-6 md:space-y-6 ">
+            <Button variant="outline" size="lg" className="cursor-pointer">
+              <a
+                href="https://github.com/nyarko-i"
+                target="blank"
+                rel="noopener noreferrer"
+              >
+                View All Projects
+              </a>
+              <ExternalLink className="w-4 h-4 ml-2 cursor-pointer" />
+            </Button>
+            <Button variant="outline" size="lg" className="cursor-pointer mt-4">
+              <a
+                href="https://github.com/nyarko-i"
+                target="blank"
+                rel="noopener noreferrer"
+              >
+                View All Design Projects
+              </a>
+              <ExternalLink className="w-4 h-4 ml-2 cursor-pointer" />
             </Button>
           </div>
         </div>

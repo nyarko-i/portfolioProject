@@ -4,9 +4,13 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: Github, href: "https://github.com", label: "GitHub" },
-    { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-    { icon: Mail, href: "mailto:isaac@example.com", label: "Email" },
+    { icon: Github, href: "https://github.com/nyarko-i", label: "GitHub" },
+    {
+      icon: Linkedin,
+      href: "https://www.linkedin.com/in/isaac-nyarko-7a8ab3291",
+      label: "LinkedIn",
+    },
+    { icon: Mail, href: "mailto:inyarko@gmail.com", label: "Email" },
   ];
 
   return (
@@ -16,7 +20,7 @@ export default function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Brand */}
             <div>
-              <h3 className="text-xl font-bold mb-4">Isaac.</h3>
+              <h3 className="text-xl font-bold mb-4">Isaac Nyarko.</h3>
               <p className="text-muted-foreground leading-relaxed">
                 Software Engineer passionate about creating beautiful and
                 functional web experiences.
@@ -80,6 +84,8 @@ export default function Footer() {
                     <a
                       key={social.label}
                       href={social.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="w-10 h-10 bg-muted rounded-full flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
                     >
                       <Icon className="w-5 h-5" />

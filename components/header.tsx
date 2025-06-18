@@ -67,7 +67,7 @@ export default function Header() {
             <button
               key={link.id}
               onClick={() => handleNavClick(link.href, link.id)}
-              className={`text-sm font-medium transition-colors hover:text-primary relative ${
+              className={`text-sm font-medium transition-colors hover:text-primary relative cursor-pointer ${
                 activeSection === link.id
                   ? "text-primary"
                   : "text-muted-foreground"
@@ -84,7 +84,15 @@ export default function Header() {
         {/* Desktop Actions */}
         <div className="hidden md:flex items-center space-x-4">
           <ModeToggle />
-          <Button size="sm">Connect</Button>
+          <Button size="sm" className="cursor-pointer">
+            <a
+              href="https://www.linkedin.com/in/isaac-nyarko-7a8ab3291"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Connect
+            </a>
+          </Button>
         </div>
 
         {/* Mobile Navigation */}
@@ -126,7 +134,15 @@ export default function Header() {
                 </nav>
 
                 <div className="pt-4 border-t">
-                  <Button className="w-full">Lets Talk</Button>
+                  <Button className="w-full cursor-pointer">
+                    <a
+                      href="https://www.linkedin.com/in/isaac-nyarko-7a8ab3291"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Connect
+                    </a>
+                  </Button>
                 </div>
               </div>
             </SheetContent>
