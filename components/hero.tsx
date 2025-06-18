@@ -64,7 +64,7 @@ export default function Hero() {
               className="group hover:scale-105 transition-transform"
             >
               <a
-                href="https://drive.google.com/file/d/1jRsloK3H6QwH9WhbIzVANHWiQpW7PDrt/view?usp=drive_link"
+                href="https://drive.google.com/file/d/13Vq7q_fYlRBTOaqcSFijQyWX0Fw-geLy/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2"
