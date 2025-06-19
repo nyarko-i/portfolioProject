@@ -20,7 +20,9 @@ export default function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Brand */}
             <div>
-              <h3 className="text-xl font-bold mb-4">Isaac Nyarko.</h3>
+              <h3 className="text-xl font-bold mb-4 text-center">
+                Isaac Nyarko
+              </h3>
               <p className="text-muted-foreground leading-relaxed">
                 Software Engineer passionate about creating beautiful and
                 functional web experiences.
@@ -29,8 +31,8 @@ export default function Footer() {
 
             {/* Quick Links */}
             <div>
-              <h4 className="font-semibold mb-4">Quick Links</h4>
-              <ul className="space-y-2">
+              <h4 className="font-semibold mb-4 text-center">Quick Links</h4>
+              <ul className="space-y-2 text-center">
                 <li>
                   <a
                     href="#home"
@@ -76,8 +78,8 @@ export default function Footer() {
 
             {/* Social Links */}
             <div>
-              <h4 className="font-semibold mb-4">Connect</h4>
-              <div className="flex space-x-4">
+              <h4 className="font-semibold mb-4 text-center">Connect</h4>
+              <div className="flex space-x-4 items-center justify-center">
                 {socialLinks.map((social) => {
                   const Icon = social.icon;
                   return (
@@ -86,7 +88,7 @@ export default function Footer() {
                       href={social.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-10 h-10 bg-muted rounded-full flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
+                      className="w-10 h-10 bg-muted rounded-full flex items-center justify-center hover:bg-primary hover:text-primary-foreground  transition-colors"
                     >
                       <Icon className="w-5 h-5" />
                       <span className="sr-only">{social.label}</span>
