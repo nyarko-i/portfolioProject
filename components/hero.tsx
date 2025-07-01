@@ -31,7 +31,7 @@ export default function Hero() {
           <div className="relative w-32 h-32 mx-auto mb-8">
             <div className="w-full h-full rounded-full overflow-hidden ring-4 ring-primary/20 shadow-xl hover:ring-primary/40 transition-all">
               <Image
-                src="/images/profile/profile.jpg"
+                src="/images/profile/Ikes.jpg"
                 alt="Isaac's profile"
                 width={128}
                 height={128}
