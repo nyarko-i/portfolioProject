@@ -56,9 +56,10 @@ export default function Header() {
         {/* Logo */}
         <Link
           href="/"
-          className="text-xl font-bold hover:text-primary transition-colors"
+          className="text-xl font-bold hover:text-primary transition-colors flex items-center space-x-2"
         >
-          Isaac Nyarko.
+          <span className="text-primary">{"</>"}</span>
+          <span>Isaac Nyarko</span>
         </Link>
 
         {/* Desktop Navigation */}
