@@ -17,7 +17,7 @@ export default function Portfolio() {
     {
       title: "G-Client(Learning Management System)",
       description:
-        "A full-featured and modern Learning Management System built with Next.js, TypeScript, and a custom backend (Azure-hosted API).",
+        "A full-featured and modern Learning Management System built with Next.js",
       image: "/images/projects/project8.png",
       technologies: [
         "Next.js",
