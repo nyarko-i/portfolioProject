@@ -15,6 +15,20 @@ export default function Portfolio() {
       githubUrl: "https://github.com/nyarko-i/ecommerce",
     },
     {
+      title: "G-Client(Learning Management System)",
+      description:
+        "A full-featured and modern Learning Management System built with Next.js, TypeScript, and a custom backend (Azure-hosted API).",
+      image: "/images/projects/project8.png",
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "Tailwind",
+        "Custom API(Azure hosted)",
+      ],
+      liveUrl: "https://github.com/nyarko-i/G-Client",
+      githubUrl: "https://github.com/nyarko-i/G-Client",
+    },
+    {
       title: "Task Management App",
       description:
         "A collaborative task management application with real-time updates.",
