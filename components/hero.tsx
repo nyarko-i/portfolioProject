@@ -58,16 +58,16 @@ export default function Hero() {
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 cursor-pointer">
             <Button
               size="lg"
-              className="group hover:scale-105 transition-transform"
+              className="cursor-pointer group hover:scale-105 transition-transform "
             >
               <a
                 href="https://drive.google.com/file/d/13Vq7q_fYlRBTOaqcSFijQyWX0Fw-geLy/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center space-x-2"
+                className="flex items-center space-x-2 "
               >
                 <Download className="mr-2" />
                 Download CV
