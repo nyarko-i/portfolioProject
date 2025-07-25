@@ -1,6 +1,6 @@
 # Portfolio Project
 
-Welcome to my **Portfolio Project**!  
+Welcome to my **Portfolio Project**  
 This site showcases my work as a **Software Engineer** and **UI/UX Designer**, featuring a collection of real-world projects and tasks that highlight my skills, creativity, and technical experience.
 
 ---
