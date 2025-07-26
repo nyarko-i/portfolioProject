@@ -100,7 +100,7 @@ export default function Footer() {
           </div>
 
           {/* Bottom Bar */}
-          <div className="border-t mt-8 pt-8 ">
+          <div className="border-t mt-5 pt-5 ">
             <p className="text-muted-foreground text-center text-sm">
               © {currentYear} Isaac. All rights reserved.
             </p>
